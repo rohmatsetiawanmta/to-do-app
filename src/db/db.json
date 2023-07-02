@@ -1,0 +1,30 @@
+{
+  "todo": [
+    {
+      "isFinished": true,
+      "name": "Makan",
+      "id": 1
+    },
+    {
+      "isFinished": true,
+      "name": "Minum",
+      "id": 2
+    },
+    {
+      "isFinished": true,
+      "name": "Mandi",
+      "id": 3
+    },
+    {
+      "isFinished": false,
+      "name": "Kerja",
+      "id": 4
+    },
+    {
+      "isFinished": false,
+      "name": "Belajar",
+      "id": 5
+    }
+  ],
+  "users": []
+}

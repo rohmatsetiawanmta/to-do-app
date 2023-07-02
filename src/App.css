@@ -1,38 +1,92 @@
-.App {
+@import url("https://font.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #000;
+  --second-color: #222;
+  --text-color: #fff;
+  --second-text-color: #00a5ff;
+  --active-color: #0025ff;
+  --button-color: #00a5ff;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--primary-color);
+  color: var(--text-color);
+}
+
+.container {  
+  background: var(--primary-color);
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 10%;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.todo {
+  padding: 1rem 10%;
+  padding-top: 100px;
+}
+
+.todo h1 {
+  color: var(--text-color);
+  font-size: 2.5rem;
+  font-weight: 700;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo .list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-color);
+  margin: 10px;
+  width: 50vw;
+  background: #222;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.input-bg{
+  background: #222;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 10px;
+  width: 70%;
 }
